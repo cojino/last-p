@@ -40,18 +40,62 @@ header{
     align-items: center;
 }
 
+#wb{
+    color: #D94625;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
 li, a{
     list-style: none;
     color: #2B413B;
-    margin-left: 20px;
+    margin-left: 40px;
     text-decoration: none;
 }
 
 button.parent{
-    background-color: #2B413B;
+    background-color: #D94625;
     color: #fff;
     width: 120px;
     height: 30px;
     border: none;
     border-radius: 50px;
+}
+
+.main-title{
+    color: #D94625;
+    font-size: 3rem;
+    grid-area: box01;
+    top: 250px;
+    margin-left: 100px;
+}
+
+.disc01{
+    grid-area: box02;
+    align-self: flex-start;
+    display: flex;
+    margin-left: 100px;
+    margin-top: -45px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+
+.fan {
+    background:#D94625;
+    padding: 0px 15px 0px 15px;
+    margin-left: 15px;
+    width: 260px;
+    border-radius: 10px;
+}
+
+.disc{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box01"
+    "box02";
 }
