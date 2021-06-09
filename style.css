@@ -13,13 +13,13 @@
     height: 100vh;
 }
 
-.container img{
+.main-img{
     position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    transform: scaleX(1);
+/*     transform: scaleX(1); */
 }
 
 .main-title{
@@ -109,7 +109,7 @@ button.parent{
 .border {
     border: #D94625 solid 3.5px;
     background-color: transparent;
-    margin-right: 50px;
+    margin-right: 40px;
     border-radius: 15px;
     width: 150px;
     cursor: pointer;
@@ -125,7 +125,7 @@ button.parent{
 .spain{
     border: none;
     background-color: #D94625;
-    margin-right: 50px;
+    margin-right: 40px;
     border-radius: 15px;
     height: 34px;
     width: 150px;
@@ -134,4 +134,27 @@ button.parent{
 
 .contrys{
     padding-top: 15px;
+}
+
+.natural{
+    background-color: black;
+    box-shadow: 0px -10px 30px 15px rgba(0, 0, 0, 1) ;
+}
+
+.na-img>img{
+    width: 315px;
+    height: 126px;
+    object-fit: cover;
+}
+
+.first{
+    object-position: 10% 45%;
+}
+
+.second{
+    object-position: 20% 45%;
+}
+
+.third{
+    object-position: 20% 1%;
 }
