@@ -75,7 +75,7 @@ button.parent{
     align-self: flex-start;
     display: flex;
     margin-left: 100px;
-    margin-top: -45px;
+    margin-top: -25px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2.5px;
@@ -98,4 +98,33 @@ button.parent{
     grid-template-areas: 
     "box01"
     "box02";
+}
+
+.w-contrys{
+    position: absolute;
+    top: 550px;
+    padding-left: 100px;
+}
+
+.border {
+    border: #D94625 solid 3.5px;
+    background-color: transparent;
+    margin-right: 50px;
+    border-radius: 15px;
+    width: 150px;
+}
+
+.contrys a{
+    color: #fff;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.spain{
+    border: none;
+    background-color: #D94625;
+    margin-right: 50px;
+    border-radius: 15px;
+    width: 150px;
 }
