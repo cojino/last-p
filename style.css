@@ -112,6 +112,7 @@ button.parent{
     margin-right: 50px;
     border-radius: 15px;
     width: 150px;
+    cursor: pointer;
 }
 
 .contrys a{
@@ -126,5 +127,11 @@ button.parent{
     background-color: #D94625;
     margin-right: 50px;
     border-radius: 15px;
+    height: 34px;
     width: 150px;
+    cursor: pointer;
+}
+
+.contrys{
+    padding-top: 15px;
 }
