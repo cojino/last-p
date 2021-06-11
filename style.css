@@ -19,7 +19,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-/*     transform: scaleX(1); */
+
 }
 
 .main-title{
@@ -141,6 +141,12 @@ button.parent{
     box-shadow: 0px -10px 30px 15px rgba(0, 0, 0, 1) ;
 }
 
+.what{
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 #wrapper{
     display: flex;
     padding-top: 20px;
@@ -161,31 +167,34 @@ section > * {
     z-index: 2;
 }
 
-section:nth-of-type(1){
+.t-natural:nth-of-type(1){
     background-image: url(/img/beach01.jpg);
     background-position: 10% 45%;
     width: 315px;
     height: 126px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-section:nth-of-type(2){
+.t-natural:nth-of-type(2){
     background-image: url(/img/forest.jpg);
     background-position: 10% 45%;
     width: 315px;
     height: 126px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-section:nth-of-type(3){
+.t-natural:nth-of-type(3){
     background-image: url(/img/mounten.jpg);
     background-position: 70% 35%;
     width: 315px;
     height: 126px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-section::after{
+.choice::after{
     content: '';
     position: absolute;
     left: 0;
@@ -193,4 +202,136 @@ section::after{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
+}
+
+.t-natural::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.best-pick{
+    background: black;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.choice:nth-of-type(1){
+    background-image: url(/img/houses01.jpeg);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.choice:nth-of-type(2){
+    background-image: url(/img/houses02.jpg);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(3){
+    background-image: url(/img/beach02.jpg);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choice{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.t-why{
+    background-color: black;
+}
+
+.whys>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.why{
+    width: 250px;
+    display: flex;
+    text-align: center;
+}
+
+.v-pics{
+    background-color: #000;
+}
+
+.l-pics{
+    background-color: #000;
+}
+
+.f-pics:nth-of-type(1){
+    background-image: url(/img/friend001.png);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.f-pics:nth-of-type(2){
+    background-image: url(/img/friend02.png);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.f-pics:nth-of-type(3){
+    background-image: url(/img/friend03.png);
+    background-size: 100%;
+    width: 388px;
+    height: 259px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.orange::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 69, 0, .35);
+}
+
+#l-pics{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.orange>h2{
+    color: #fff;
+    font-size: 100px;
+    display: flex;
+    opacity: 70%;
 }
