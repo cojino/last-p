@@ -8,7 +8,6 @@
     margin: 0;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -263,11 +262,22 @@ section > * {
     justify-content: space-evenly;
 }
 
+.btn{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    outline: none;
+}
+
+.btn i:hover{
+    cursor: pointer ;
+}
+
 .choice{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 30px;
+    padding: 27px;
 }
 
 .t-why{
@@ -523,4 +533,8 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200px;
+}
+
+.toggle-pressed{
+    color: red;
 }
