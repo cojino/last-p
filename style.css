@@ -605,3 +605,284 @@ footer{
 .toggle-pressed{
     color: red;
 }
+
+@media(max-width: 768px){
+    
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D94625;
+    font-size: 2rem;
+    grid-area: box01;
+    top: 250px;
+    margin-left: 100px;
+}
+
+.disc01{
+    grid-area: box02;
+    align-self: flex-start;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.fan {
+    background:#D94625;
+    font-size: 20px;
+    padding: 0px 15px 0px 15px;
+    margin-left: 5px;
+    width: 123px;
+    border-radius: 5px;
+}
+
+.disc{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box01"
+    "box02";
+}
+
+.w-contrys{
+    position: absolute;
+    top: 465px;
+    padding-left: 100px;
+}
+
+.contrys{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contrys a{
+    color: #fff;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.border {
+    border: #D94625 solid 3px;
+    background-color: transparent;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.spain{
+    border: none;
+    background-color: #D94625;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.what{
+    padding-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#wrapper{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.t-natural:nth-of-type(1){
+    background-image: url(/img/beach01.png);
+    background-size: 110%;
+    width: 210px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.t-natural:nth-of-type(2){
+    background-image: url(/img/forest.png);
+    background-size: 110%;
+    width: 210px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.t-natural:nth-of-type(3){
+    background-image: url(/img/mounten.png);
+    background-size: 110%;
+    width: 210px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+
+.choice:nth-of-type(1){
+    background-image: url(/img/houses01.jpeg);
+    background-size: 100%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.choice:nth-of-type(2){
+    background-image: url(/img/houses02.jpg);
+    background-size: 100%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(3){
+    background-image: url(/img/beach02.jpg);
+    background-size: 100%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(4){
+    background-image: url(/img/go01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(5){
+    background-image: url(/img/go02.png);
+    background-size: 105%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(6){
+    background-image: url(/img/go03.png);
+    background-size: 100%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(7){
+    background-image: url(/img/go04.png);
+    background-size: 105%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choice:nth-of-type(8){
+    background-image: url(/img/go05.png);
+    background-size: 105%;
+    width: 259px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choices #choices{
+    min-width: 100%;
+    height: 90%;
+/*     margin: 0 20px 0 0; */
+    display: flex;
+    position: relative; 
+    left: 775px;
+    transition: 0.5s;
+}
+
+.f-pics:nth-of-type(1){
+    background-image: url(/img/friend001.png);
+    background-size: 100%;
+    width: 173px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.f-pics:nth-of-type(2){
+    background-image: url(/img/friend02.png);
+    background-size: 100%;
+    width: 173px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.f-pics:nth-of-type(3){
+    background-image: url(/img/friend03.png);
+    background-size: 100%;
+    width: 173px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.orange::after{
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 69, 0, .35);
+}
+
+#l-pics{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.orange>h2{
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    opacity: 70%;
+}
+
+.form{
+    width: 50%;
+    padding: .5rem 4rem;
+    border-radius: 3rem;
+    box-shadow: 0 10px 25px rgba(255, 69, 0, .2);
+}
+
+.form-title{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+}
