@@ -43,21 +43,22 @@ header{
 }
 
 #wb{
-    color: #D94625;
+    color: #D20BA7;
     margin-left: 40px;
     font-size: 40px;
 }
 
 li, a{
     list-style: none;
-    color: #2B413B;
+    color: #fff;
     margin-left: 40px;
     text-decoration: none;
 }
 
 button.parent{
-    background-color: #D94625;
-    color: #fff;
+    background-color: #D20BA7;
+    cursor: pointer;
+    color: #000;
     width: 120px;
     height: 30px;
     border: none;
@@ -65,7 +66,7 @@ button.parent{
 }
 
 .main-title{
-    color: #D94625;
+    color: #D20BA7;
     font-size: 3rem;
     grid-area: box01;
     top: 250px;
@@ -85,7 +86,7 @@ button.parent{
 }
 
 .fan {
-    background:#D94625;
+    background:#D20BA7;
     padding: 0px 15px 0px 15px;
     margin-left: 15px;
     width: 260px;
@@ -109,12 +110,15 @@ button.parent{
 }
 
 .border {
-    border: #D94625 solid 3.5px;
+    border: #D20BA7 solid 3.5px;
     background-color: transparent;
     margin-right: 40px;
     border-radius: 15px;
     width: 150px;
     cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .contrys a{
@@ -124,14 +128,9 @@ button.parent{
     font-size: 18px;
 }
 
-.spain{
-    border: none;
-    background-color: #D94625;
-    margin-right: 40px;
-    border-radius: 15px;
-    height: 34px;
-    width: 150px;
-    cursor: pointer;
+.border.active,
+.border:hover{
+    background-color: #D20BA7;
 }
 
 .contrys{
@@ -170,30 +169,33 @@ section > * {
 }
 
 .t-natural:nth-of-type(1){
-    background-image: url(/img/beach01.png);
+    background-image: url(/C-img/beach.png);
     background-size: 100%;
     width: 315px;
     height: 126px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .t-natural:nth-of-type(2){
-    background-image: url(/img/forest.png);
+    background-image: url(/C-img/forest.png);
     background-size: 100%;
     width: 315px;
     height: 126px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .t-natural:nth-of-type(3){
-    background-image: url(/img/mounten.png);
+    background-image: url(/C-img/mountains.png);
     background-size: 100%;
     width: 315px;
     height: 126px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .choice::after{
@@ -322,7 +324,6 @@ section > * {
 .choices #choices{
     min-width: 100%;
     height: 90%;
-/*     margin: 0 20px 0 0; */
     display: flex;
     position: relative; 
     left: 960px;
@@ -351,6 +352,7 @@ section > * {
     background-color: black;
 }
 
+
 .whys>div{
     display: flex;
     align-items: center;
@@ -360,13 +362,24 @@ section > * {
 }
 
 .why{
-    width: 250px;
+    background: #D20BA7;
+    -webkit-box-shadow: 0px 0px 17px 4px rgba(179,48,0,0.82); 
+    box-shadow: 0px 0px 17px 4px rgba(210, 11, 167, .82);
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 200px;
+    width: 270px;
     display: flex;
     text-align: center;
+    align-items: center;
 }
 
 .t-why>h2{
+    padding-top: 19px;
+    font-size: 20px;
     padding-left: 95px;
+    margin-bottom: -10px;
 }
 
 .v-pics{
@@ -415,12 +428,13 @@ section > * {
 }
 
 .orange::after{
+    border-radius: 10px;
     content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 69, 0, .35);
+    background: rgba(210, 11, 167, .35);
 }
 
 #l-pics{
@@ -448,7 +462,7 @@ section > * {
     width: 50%;
     padding: 3rem 2rem;
     border-radius: 3rem;
-    box-shadow: 0 10px 25px rgba(255, 69, 0, .2);
+    box-shadow: 0 10px 25px rgba(210, 11, 167, .2);
 }
 
 .form-title{
@@ -470,7 +484,7 @@ section > * {
     width: 100%;
     height: 100%;
     font-size: 17px;
-    border: 1px solid #FF4500;
+    border: 1px solid #D20BA7;
     border-radius: .5rem;
     outline: none;
     padding: 1rem;
@@ -494,7 +508,7 @@ section > * {
     padding: .75rem 2rem;
     outline: none;
     border: none;
-    background-color: #FF4500;
+    background-color: #D20BA7;
     color: #fff;
     font-size: 17px;
     border-radius: .5rem;
@@ -503,13 +517,13 @@ section > * {
 }
 
 .form-button:hover{
-    box-shadow: 0 10px 36px rgba(255, 69, 0, .15);
+    box-shadow: 0 10px 36px rgba(210, 11, 167, .15);
 }
 
 .form-input:focus + .form-label{
     top: -1.2rem;
     left: .8rem;
-    color: #FF4500;
+    color: #D20BA7;
     font-size: 17px;
     font-weight: 500;
     z-index: 10;
@@ -531,7 +545,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #590202;
+    background-color: #4b023b;
     height: auto;
     width: 100%;
     padding-top: 40px;
@@ -581,7 +595,7 @@ footer{
 }
 
 .socials a:hover i{
-    color: #FF4400;
+    color: #D20BA7;
 }
 
 .footer-bottom{
@@ -606,13 +620,35 @@ footer{
     color: red;
 }
 
-@media(max-width: 768px){
-    
+@media(max-width: 1400px){
+#wb{
+    color: #D20BA7;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+li, a{
+    list-style: none;
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+button.parent{
+    background-color: #D20BA7;
+    cursor: pointer;
+    color: #fff;
+    width: 115px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+}
+
 .main-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #D94625;
+    color: #D20BA7;
     font-size: 2rem;
     grid-area: box01;
     top: 250px;
@@ -632,7 +668,7 @@ footer{
 }
 
 .fan {
-    background:#D94625;
+    background:#D20BA7;
     font-size: 20px;
     padding: 0px 15px 0px 15px;
     margin-left: 5px;
@@ -669,7 +705,7 @@ footer{
 }
 
 .border {
-    border: #D94625 solid 3px;
+    border: #D20BA7 solid 3px;
     background-color: transparent;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -678,15 +714,7 @@ footer{
     cursor: pointer;
 }
 
-.spain{
-    border: none;
-    background-color: #D94625;
-    margin-right: 20px;
-    border-radius: 15px;
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-}
+
 
 .what{
     padding-left: 90px;
@@ -815,10 +843,9 @@ section{
 .choices #choices{
     min-width: 100%;
     height: 90%;
-/*     margin: 0 20px 0 0; */
     display: flex;
     position: relative; 
-    left: 775px;
+    left: 800px;
     transition: 0.5s;
 }
 
@@ -856,7 +883,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 69, 0, .35);
+    background: rgba(210, 11, 167, .35);
 }
 
 #l-pics{
@@ -877,7 +904,7 @@ section{
     width: 50%;
     padding: .5rem 4rem;
     border-radius: 3rem;
-    box-shadow: 0 10px 25px rgba(255, 69, 0, .2);
+    box-shadow: 0 10px 25px rgba(210, 11, 167, .2);
 }
 
 .form-title{
